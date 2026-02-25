@@ -1,0 +1,77 @@
+.container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #f5f7fa, #b2b9c5);
+  transition: 0.3s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container.dark {
+  background: #913838;
+  color: rgb(122, 49, 49);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgb(110, 110, 110);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #0f0a0a;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  border-radius: 8px;
+  background: #676679;
+  font-style: bold;
+  color: rgb(20, 1, 1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ebebee;
+}
+
+.color-box {
+  height: 40px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.btn-group button {
+  margin-right: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
